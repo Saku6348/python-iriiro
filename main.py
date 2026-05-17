@@ -1,15 +1,17 @@
-def fizz_buzz(n):
-    if n%15==0:
+def fizz_buzz(n,x,y,):
+    if (n%x==0)and(n%y==0):
         st="FizzBuzz"
-    elif n%3==0:
+    elif n%x==0:
         st="Fizz"
-    elif n%5==0:
+    elif n%y==0:
         st="Buzz"
     else:
         st=str(n)
     return st
 
-sizensuu=input("自然数を入力してください。")
-print(fizz_buzz(int(sizensuu)))
+s=input("割りたい数を入力してください。")
+r=input("割る数を入力してください。")
+w=input("割る数を入力してください。")
+print(fizz_buzz(int(s),int(r),int(w)))
 
     
